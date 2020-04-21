@@ -1,0 +1,15 @@
+host = "192.168.0.1"
+port = 2121
+username = "scanner"
+password = "$2y$12$3TwvitKJL3L4/4XVMFFgAOYVCsnj6jZ/cxRBF2/ynbrQPYOEUzqEm" # scanme
+plaintext = false # set this to true if you want to use a plain text password
+
+[path.seafile]
+type="seafile"
+username="scanner"
+password="somepassword"
+api="https://seafile.example.com/"
+
+[path.documents]
+type="fs"
+root="/home/user/Documents/Scanned"
