@@ -147,3 +147,17 @@ func (f directoryDetail) Owner() string {
 func (f directoryDetail) Group() string {
 	return ""
 }
+
+type uploadLink struct {
+	Username   string    `json:"username"`
+	ViewCnt    int       `json:"view_cnt"`
+	Ctime      time.Time `json:"ctime"`
+	ExpireDate string    `json:"expire_date"`
+	Token      string    `json:"token"`
+	RepoID     string    `json:"repo_id"`
+	Link       string    `json:"link"`
+	ObjName    string    `json:"obj_name"`
+	Path       string    `json:"path"`
+	IsExpired  bool      `json:"is_expired"`
+	RepoName   string    `json:"repo_name"`
+}

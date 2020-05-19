@@ -134,7 +134,7 @@ func (d *Driver) PutFile(path string, stream io.Reader, abool bool) (int64, erro
 	if err != nil {
 		return 0, err
 	}
-	if err := writer.WriteField("parent_dir", filepath.Dir(path)); err != nil {
+	if err := writer.WriteField("parent_dir", filepath.Dir(subPath)); err != nil {
 		return 0, err
 	}
 
